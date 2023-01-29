@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(18,18,18);
+}
+
+#menu {
+    color: white;
+    font-size: 30px;
+    visibility: hidden;
+}
+
+#pudlo {
+    background-color: rgb(39,39,39);
+    visibility: hidden;
+    margin: 30px;
+    padding: 15px;
+    border: 3px solid rgb(28,28,28);
+}
+
+#plansza {
+    background-color: white;
+    animation-name: lose;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+@keyframes lose {
+    0% {background-color: white;}
+    50% {background-color: black;}
+    100% {background-color: white;}
+}
+
+td {
+    width: 46px;
+    height: 52px;
+    border: 2px solid black;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(204,204,204);
+    position: relative;
+    user-select: none;
+}
+
+td.bomb {
+    background-image: url(./jpg/bomba.jpg);
+}
+
+td.k1 {
+    color: rgb(0,0,255);
+}
+
+td.k2 {
+    color: rgb(0,123,0);
+}
+
+td.k3 {
+    color: rgb(255,0,0);
+}
+
+td.k4 {
+    color: rgb(0,0,123);
+}
+
+td.k5 {
+    color: rgb(123,0,0);
+}
+
+td.k6 {
+    color: rgb(0,123,123);
+}
+
+.zaslona {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: gray;
+    width: 48px;
+    height: 48px;
+    background-image: "";
+}
